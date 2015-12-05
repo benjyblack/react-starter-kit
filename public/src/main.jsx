@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import CommentBox from './components/comment-box'
 
 ReactDOM.render(
-  <h1>Hello, world!</h1>,
+  <CommentBox />,
   document.getElementById('example')
 );
