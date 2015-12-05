@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import _ from 'lodash';
 import Comment from '../Comment/Comment';
 
 class CommentList extends Component {
   render() {
-    var commentNodes = this.props.data.map(function(comment) {
+    var commentNodes = _.map(this.props.data, function(comment) {
       return (
         <Comment author={comment.author} key={comment.id}>
           {comment.text}
