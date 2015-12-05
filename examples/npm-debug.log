@@ -1,0 +1,114 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/benjyblack/.nvm/v0.10.35/bin/node',
+1 verbose cli   '/Users/benjyblack/.nvm/v0.10.35/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'babel-preset-react',
+1 verbose cli   'babel-presets-es2015' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.35
+4 verbose cache add [ 'babel-preset-react', null ]
+5 verbose cache add name=undefined spec="babel-preset-react" args=["babel-preset-react",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'babel-preset-react',
+6 verbose parsed url   path: 'babel-preset-react',
+6 verbose parsed url   href: 'babel-preset-react' }
+7 verbose cache add [ 'babel-presets-es2015', null ]
+8 verbose cache add name=undefined spec="babel-presets-es2015" args=["babel-presets-es2015",null]
+9 verbose parsed url { protocol: null,
+9 verbose parsed url   slashes: null,
+9 verbose parsed url   auth: null,
+9 verbose parsed url   host: null,
+9 verbose parsed url   port: null,
+9 verbose parsed url   hostname: null,
+9 verbose parsed url   hash: null,
+9 verbose parsed url   search: null,
+9 verbose parsed url   query: null,
+9 verbose parsed url   pathname: 'babel-presets-es2015',
+9 verbose parsed url   path: 'babel-presets-es2015',
+9 verbose parsed url   href: 'babel-presets-es2015' }
+10 silly lockFile c1b48c99-babel-preset-react babel-preset-react
+11 verbose lock babel-preset-react /Users/benjyblack/.npm/c1b48c99-babel-preset-react.lock
+12 silly lockFile 23c2ef77-babel-presets-es2015 babel-presets-es2015
+13 verbose lock babel-presets-es2015 /Users/benjyblack/.npm/23c2ef77-babel-presets-es2015.lock
+14 silly lockFile c1b48c99-babel-preset-react babel-preset-react
+15 silly lockFile c1b48c99-babel-preset-react babel-preset-react
+16 silly lockFile 23c2ef77-babel-presets-es2015 babel-presets-es2015
+17 silly lockFile 23c2ef77-babel-presets-es2015 babel-presets-es2015
+18 verbose addNamed [ 'babel-preset-react', '' ]
+19 verbose addNamed [ null, '*' ]
+20 silly lockFile 07ad6747-babel-preset-react babel-preset-react@
+21 verbose lock babel-preset-react@ /Users/benjyblack/.npm/07ad6747-babel-preset-react.lock
+22 verbose addNamed [ 'babel-presets-es2015', '' ]
+23 verbose addNamed [ null, '*' ]
+24 silly lockFile be43dcb5-babel-presets-es2015 babel-presets-es2015@
+25 verbose lock babel-presets-es2015@ /Users/benjyblack/.npm/be43dcb5-babel-presets-es2015.lock
+26 silly addNameRange { name: 'babel-preset-react', range: '*', hasData: false }
+27 silly addNameRange { name: 'babel-presets-es2015', range: '*', hasData: false }
+28 verbose request where is /babel-presets-es2015
+29 verbose request registry https://registry.npmjs.org/
+30 verbose request id 5dee5ca0d0e1c07c
+31 verbose url raw /babel-presets-es2015
+32 verbose url resolving [ 'https://registry.npmjs.org/', './babel-presets-es2015' ]
+33 verbose url resolved https://registry.npmjs.org/babel-presets-es2015
+34 verbose request where is https://registry.npmjs.org/babel-presets-es2015
+35 info trying registry request attempt 1 at 12:06:26
+36 http GET https://registry.npmjs.org/babel-presets-es2015
+37 verbose registry.get https://registry.npmjs.org/babel-preset-react not expired, no request
+38 silly addNameRange number 2 { name: 'babel-preset-react', range: '*', hasData: true }
+39 silly addNameRange versions [ 'babel-preset-react',
+39 silly addNameRange   [ '6.0.2',
+39 silly addNameRange     '6.0.12',
+39 silly addNameRange     '6.0.14',
+39 silly addNameRange     '6.0.15',
+39 silly addNameRange     '6.1.2',
+39 silly addNameRange     '6.1.4',
+39 silly addNameRange     '6.1.17',
+39 silly addNameRange     '6.1.18',
+39 silly addNameRange     '6.2.4',
+39 silly addNameRange     '6.3.13' ] ]
+40 verbose addNamed [ 'babel-preset-react', '6.3.13' ]
+41 verbose addNamed [ '6.3.13', '6.3.13' ]
+42 silly lockFile 5692bf74-babel-preset-react-6-3-13 babel-preset-react@6.3.13
+43 verbose lock babel-preset-react@6.3.13 /Users/benjyblack/.npm/5692bf74-babel-preset-react-6-3-13.lock
+44 silly lockFile 5692bf74-babel-preset-react-6-3-13 babel-preset-react@6.3.13
+45 silly lockFile 5692bf74-babel-preset-react-6-3-13 babel-preset-react@6.3.13
+46 silly lockFile 07ad6747-babel-preset-react babel-preset-react@
+47 silly lockFile 07ad6747-babel-preset-react babel-preset-react@
+48 http 404 https://registry.npmjs.org/babel-presets-es2015
+49 silly registry.get cb [ 404,
+49 silly registry.get   { 'content-type': 'application/json',
+49 silly registry.get     'cache-control': 'max-age=0',
+49 silly registry.get     'content-length': '2',
+49 silly registry.get     'accept-ranges': 'bytes',
+49 silly registry.get     date: 'Sat, 05 Dec 2015 17:06:26 GMT',
+49 silly registry.get     via: '1.1 varnish',
+49 silly registry.get     age: '0',
+49 silly registry.get     connection: 'keep-alive',
+49 silly registry.get     'x-served-by': 'cache-atl6227-ATL',
+49 silly registry.get     'x-cache': 'MISS',
+49 silly registry.get     'x-cache-hits': '0',
+49 silly registry.get     'x-timer': 'S1449335186.588461,VS0,VE29' } ]
+50 silly lockFile be43dcb5-babel-presets-es2015 babel-presets-es2015@
+51 silly lockFile be43dcb5-babel-presets-es2015 babel-presets-es2015@
+52 error 404 Not Found
+52 error 404
+52 error 404 'babel-presets-es2015' is not in the npm registry.
+52 error 404 You should bug the author to publish it
+52 error 404
+52 error 404 Note that you can also install from a
+52 error 404 tarball, folder, or http url, or git url.
+53 error System Darwin 15.0.0
+54 error command "/Users/benjyblack/.nvm/v0.10.35/bin/node" "/Users/benjyblack/.nvm/v0.10.35/bin/npm" "install" "babel-preset-react" "babel-presets-es2015"
+55 error cwd /Users/benjyblack/Projects/react-starter-kit/examples
+56 error node -v v0.10.35
+57 error npm -v 1.4.28
+58 error code E404
+59 verbose exit [ 1, true ]
