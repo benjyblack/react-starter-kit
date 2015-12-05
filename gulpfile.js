@@ -9,18 +9,20 @@ var build = function (shouldWatch) {
     entries: 'public/src/main.js',
     debug: true,
     cache: {},
-    packageCache: {}
+    packageCache: {},
+    verbose: true
   });
 
   var bundle = function () {
-    return bundler.transform(babelify, { presets: ['es2015', 'react'] })
+    return bundler
+      .transform(babelify, { presets: ['es2015', 'react'] })
       .bundle()
       .pipe(source('bundle.js'))
       .pipe(gulp.dest('public/dist'));
   };
 
   if (shouldWatch) {
-    bundler = watchify(bundler);
+    bundler = watchify(bundler, { verbose: true });
     bundler.on('update', bundle);
   }
 
