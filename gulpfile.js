@@ -22,7 +22,7 @@ var build = function (shouldWatch) {
   };
 
   if (shouldWatch) {
-    bundler = watchify(bundler, { verbose: true });
+    bundler = watchify(bundler, { poll: true });
     bundler.on('update', bundle);
   }
 

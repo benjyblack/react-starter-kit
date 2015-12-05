@@ -18,10 +18,11 @@
     "gulp": "^3.9.0",
     "jquery": "^2.1.4",
     "lodash": "^3.10.1",
-    "marked": "^0.3.5",
+    "material-ui": "^0.14.0-rc1",
     "moment": "^2.10.6",
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
+    "react-tap-event-plugin": "^0.2.1",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.6.1"
   },

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import RaisedButton from 'material-ui/lib/raised-button';
 
 class CommentForm extends Component {
   constructor() {
@@ -40,7 +41,7 @@ class CommentForm extends Component {
           value={this.state.text}
           onChange={this.handleTextChange.bind(this)}
         />
-        <input type="submit" value="Post" />
+        <RaisedButton type="submit" label="Post" />
       </form>
     );
   }

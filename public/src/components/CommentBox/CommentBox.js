@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
+import Card from 'material-ui/lib/card/card';
+import CardTitle from 'material-ui/lib/card/card-title';
+import CardText from 'material-ui/lib/card/card-text';
 import CommentList from '../CommentList/CommentList';
 import CommentForm from '../CommentForm/CommentForm';
 
@@ -46,9 +49,13 @@ class CommentBox extends Component {
   render() {
     return (
       <div className="commentBox">
-        <h1>Comments</h1>
-        <CommentList data={this.state.data} />
-        <CommentForm onCommentSubmit={this.handleCommentSubmit.bind(this)} />
+        <Card>
+          <CardTitle title="Comments" />
+          <CardText>
+            <CommentList data={this.state.data} />
+            <CommentForm onCommentSubmit={this.handleCommentSubmit.bind(this)} />
+          </CardText>
+        </Card>
       </div>
     );
   }
