@@ -14,6 +14,21 @@ class CommentBox extends Component {
     setInterval(this.loadCommentsFromServer.bind(this), this.props.pollInterval);
   }
 
+  handleCommentSubmit(comment) {
+    $.ajax({
+      url: this.props.url,
+      dataType: 'json',
+      type: 'POST',
+      data: comment,
+      success: function(data) {
+        this.setState({data: data});
+      }.bind(this),
+      error: function(xhr, status, err) {
+        console.error(this.props.url, status, err.toString());
+      }.bind(this)
+    });
+  }
+
   loadCommentsFromServer() {
     $.ajax({
       url: this.props.url,
@@ -33,7 +48,7 @@ class CommentBox extends Component {
       <div className="commentBox">
         <h1>Comments</h1>
         <CommentList data={this.state.data} />
-        <CommentForm />
+        <CommentForm onCommentSubmit={this.handleCommentSubmit.bind(this)} />
       </div>
     );
   }
