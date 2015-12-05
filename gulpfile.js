@@ -7,7 +7,6 @@ var source = require('vinyl-source-stream');
 var build = function (shouldWatch) {
   var bundler = browserify({
     entries: 'public/src/main.js',
-    extensions: ['.js'],
     debug: true,
     cache: {},
     packageCache: {}
@@ -36,4 +35,4 @@ gulp.task('watch', function () {
   return build(true);
 });
 
-gulp.task('default', ['build']);
+gulp.task('default', ['watch']);
