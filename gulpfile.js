@@ -6,8 +6,8 @@ var source = require('vinyl-source-stream');
 
 var build = function (shouldWatch) {
   var bundler = browserify({
-    entries: 'public/src/main.jsx',
-    extensions: ['.jsx'],
+    entries: 'public/src/main.js',
+    extensions: ['.js'],
     debug: true,
     cache: {},
     packageCache: {}
